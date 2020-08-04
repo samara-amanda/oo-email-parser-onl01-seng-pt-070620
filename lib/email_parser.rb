@@ -11,6 +11,7 @@ class EmailAddressParser
 
   def parse
     @parse = parse
+    @parse.uniq
   end
 
   parser = self.new(@email_addresses)
