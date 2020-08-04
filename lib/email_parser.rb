@@ -8,7 +8,7 @@ class EmailAddressParser
     @emails = emails
   end
 
-  parser = EmailAddressParser.new(emails)
+  parser = EmailAddressParser.new
   parser.parse
 
 
