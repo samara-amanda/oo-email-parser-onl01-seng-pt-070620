@@ -8,9 +8,6 @@ class EmailAddressParser
     @emails = emails
   end
 
-  parser = self.new(@emails)
-  parser.parse
-
 
 
 end
