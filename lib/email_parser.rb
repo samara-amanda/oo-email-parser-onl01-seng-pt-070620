@@ -10,7 +10,7 @@ class EmailAddressParser
   attr_accessor :email_addresses
 
   def parse
-    @email_addresses.gsub(",", "").split(",").map(&:strip)
+    @email_addresses.gsub(",", "").split(",").uniq
     @email_addresses.uniq
   end
 
