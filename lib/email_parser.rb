@@ -15,6 +15,6 @@ class EmailAddressParser
   end
 
   parser = self.new(@email_addresses)
-  parser.parse
+  parser.@parse
 
 end
