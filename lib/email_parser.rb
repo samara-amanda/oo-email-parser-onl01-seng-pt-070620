@@ -14,7 +14,6 @@ class EmailAddressParser
     @parse.split(",").map(&:strip)
   end
 
-  parser = self.new(@email_addresses)
-  parser.parse
+
 
 end
