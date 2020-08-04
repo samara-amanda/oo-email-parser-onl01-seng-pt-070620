@@ -10,7 +10,7 @@ class EmailAddressParser
   attr_accessor :email_addresses
 
   def parse
-    @parse.uniq
+    @parse.split(",").map(&:strip).uniq
   end
 
   parser = self.new(@email_addresses)
