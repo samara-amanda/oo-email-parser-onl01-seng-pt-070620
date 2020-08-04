@@ -10,7 +10,7 @@ class EmailAddressParser
   attr_accessor :email_addresses
 
   def parse
-    @parse = parse
+    @parse
     @parse.uniq
   end
 
