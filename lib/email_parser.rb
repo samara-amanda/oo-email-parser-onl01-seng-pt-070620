@@ -9,7 +9,7 @@ class EmailAddressParser
   end
   attr_accessor :parse
 
-  parser = self.new(emails)
+  parser = self.new(@emails)
   parser.parse
 
 
