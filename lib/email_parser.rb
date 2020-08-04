@@ -10,8 +10,8 @@ class EmailAddressParser
   attr_accessor :email_addresses
 
   def parse
+    @email_addresses.gsub(",", "").split(",").map(&:strip)
     @email_addresses.uniq
-    @email_addresses.split(",").map(&:strip)
   end
 
 
